@@ -3,12 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@eqworks/chart-system": "^0.4.2",
+    "@nivo/bar": "^0.70.0",
+    "@nivo/core": "^0.70.0",
+    "@nivo/tooltip": "^0.70.0",
+    "@react-google-maps/api": "^2.2.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "fuse.js": "^6.4.6",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-virtualized": "^9.22.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
