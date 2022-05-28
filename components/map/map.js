@@ -43,14 +43,14 @@ function Map({ onError }) {
 
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   })
 
   const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(
     function callback(map) {
-      fetch(process.env.REACT_APP_API_URL + '/poi')
+      fetch(process.env.NEXT_PUBLIC_API_URL + '/poi')
         .then((res) => res.json())
         .then((result) => {
           setDailyStats(result)

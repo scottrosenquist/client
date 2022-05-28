@@ -5,7 +5,7 @@ function Chart({ onError }) {
   const [dailyStats, setDailyStats] = useState([])
 
   useEffect(() => {
-    fetch(process.env.REACT_APP_API_URL + '/events/week')
+    fetch(process.env.NEXT_PUBLIC_API_URL + '/events/week')
       .then((res) => res.json())
       .then((result) => {
         setDailyStats(result)

@@ -8,7 +8,7 @@ function MyTable({onError}) {
   const [matchingTerms, setMatchingTerms] = useState([])
 
   useEffect(() => {
-    fetch(process.env.REACT_APP_API_URL + '/stats/hourlypoi')
+    fetch(process.env.NEXT_PUBLIC_API_URL + '/stats/hourlypoi')
       .then(res => res.json())
       .then(
         (result) => {

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import './App.css'
-import Chart from './Chart'
-import MyTable from './Table'
-import Map from './Map'
+import Chart from '../components/chart/chart'
+import MyTable from '../components/table/table'
+import Map from '../components/map/map'
 import Button from 'react-bootstrap/Button'
 import Toast from 'react-bootstrap/Toast'
 
